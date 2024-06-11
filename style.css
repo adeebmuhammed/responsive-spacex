@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    font: 16px / 24px D-DIN-Medium, Arial, Verdana, sans-serif;
+    background-color: black;
+    color: #fff;
+}
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    margin: 0 aut;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+.logo{
+    height: 26px;
+    width: 200px;
+    margin-right: 40px;
+}
+header .logo{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    margin-left: -70px;
+}
+@media (min-width: 1000px){
+    header .logo{
+        width: 150px;
+        height: 20px;
+    }
+    header .logo{
+        margin-right: 40px;
+        position: relative;
+        top: initial;
+        left: initial;
+        margin-left: initial;
+    }
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 13px;
+}
+.nav-center{
+    display: none;
+}
+@media (min-width: 1000px){
+    .nav-center{
+        display: block;
+    }
+}
+.nav-right{
+    position: fixed;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    right: 0;
+    top: 0;
+}
+.nav-right #shop{
+    display: none;
+}
+.nav-right a svg{
+    cursor: pointer;
+}
+@media (min-width: 1000px){
+    .nav-right #shop{
+        display: inline-block;
+    }
+}
+nav .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 280px;
+    background-color: #000;
+}
+.sidebar a{
+    display: block;
+    border-bottom: 1px solid #222;
+    padding: 20px;
+    text-align: right;
+}
+.sidebar{
+    padding-top: 20px;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    width: 280px;
+    z-index: 2;
+    background-color: #000;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+section div.content{
+    position: absolute;
+    bottom: 15%;
+    left: 50px;
+    max-width: 450px;
+}
+section div.content h2{
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+section div.content h4{
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    color: #fff;
+}
+section div.content a{
+    border: 1px solid white;
+    display:inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    color: #fff;
+    margin-top: 30px;
+    font-weight: bold;
+}
+footer{
+    padding: 30px;
+}
+footer nav{
+    text-align: center;
+}
+footer nav a{
+    color: #999;
+}
